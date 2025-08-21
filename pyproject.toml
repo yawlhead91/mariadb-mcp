@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mariadb-mcp-server"
+version = "1.0.0"
+description = "MariaDB MCP server compatible with Claude Code"
+authors = [
+    {name = "MCP MariaDB Server", email = ""}
+]
+dependencies = [
+    "mcp>=1.1.0",
+    "aiomysql>=0.2.0",
+    "python-dotenv>=1.0.0"
+]
+requires-python = ">=3.10"
+
+[project.scripts]
+mariadb-mcp = "mariadb_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mariadb_mcp"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0"
+]

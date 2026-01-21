@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server for MariaDB database operations, compatible with Claude Code and other MCP clients.
 
+<a href="https://glama.ai/mcp/servers/@yawlhead91/mariadb-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@yawlhead91/mariadb-mcp/badge" alt="MariaDB Server MCP server" />
+</a>
+
 ## Features
 
 This MCP server provides these standard database tools:
